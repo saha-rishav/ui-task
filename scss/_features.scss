@@ -545,7 +545,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            gap: 45px;
+            gap: 25px;
             padding: 35px 30px;
             border-radius: 20px;
             background: #0e781c;
@@ -558,6 +558,8 @@
 
                 img {
                     width: 100%;
+                    height: 100%;
+                    object-fit: contain;
                 }
             }
         }
@@ -747,7 +749,7 @@
 
 .faq-section {
     padding: 5rem 2rem;
-    text-align: center;
+    // text-align: center;
 
     .container {
         max-width: 800px;
@@ -784,21 +786,39 @@
                 background: rgba(255, 255, 255, 0.12);
             }
 
-            .faq-question {
-                width: 100%;
-                background: none;
-                border: none;
-                text-align: left;
+            .faq-header_question {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 15px;
                 padding: 1.2rem 1.5rem;
-                color: #fff;
-                font-size: 1.05rem;
-                font-weight: 600;
-                cursor: pointer;
+
+                .faq-question {
+                    width: 100%;
+                    background: none;
+                    border: none;
+                    text-align: left;
+                    color: #fff;
+                    font-size: 1.05rem;
+                    font-weight: 600;
+                    cursor: pointer;
+                }
+
+                p{
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    padding: 10px;
+                    height: 30px;
+                    width: 30px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
             }
 
             .faq-answer {
-                display: none;
                 padding: 0 1.5rem 1.2rem;
+                display: none;
                 color: #cfcfcf;
                 font-size: 0.95rem;
                 line-height: 1.5;
@@ -816,6 +836,7 @@
     background: url('../assets/footer-img.png') center no-repeat;
     background-size: cover;
     min-height: 100vh;
+    overflow: hidden;
 
     .sales-content {
         width: 90%;
@@ -934,11 +955,8 @@
         width: 90%;
 
         .privacy {
-            // position: absolute;
-            bottom: 20px;
-            right: 40px;
             font-size: 0.9rem;
-            color: #888;
+            color: #d2d2d2;
         }
     }
 }

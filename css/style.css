@@ -850,7 +850,7 @@ nav .mobile-menu .close-btn .icon {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 45px;
+  gap: 25px;
   padding: 35px 30px;
   border-radius: 20px;
   background: #0e781c;
@@ -863,6 +863,8 @@ nav .mobile-menu .close-btn .icon {
 }
 .product .prodcut-content .left .img_div img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .product .prodcut-content .right {
   display: flex;
@@ -1029,7 +1031,6 @@ nav .mobile-menu .close-btn .icon {
 
 .faq-section {
   padding: 5rem 2rem;
-  text-align: center;
 }
 .faq-section .container {
   max-width: 800px;
@@ -1061,20 +1062,36 @@ nav .mobile-menu .close-btn .icon {
 .faq-section .faq-items .faq-item:hover {
   background: rgba(255, 255, 255, 0.12);
 }
-.faq-section .faq-items .faq-item .faq-question {
+.faq-section .faq-items .faq-item .faq-header_question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  padding: 1.2rem 1.5rem;
+}
+.faq-section .faq-items .faq-item .faq-header_question .faq-question {
   width: 100%;
   background: none;
   border: none;
   text-align: left;
-  padding: 1.2rem 1.5rem;
   color: #fff;
   font-size: 1.05rem;
   font-weight: 600;
   cursor: pointer;
 }
+.faq-section .faq-items .faq-item .faq-header_question p {
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .faq-section .faq-items .faq-item .faq-answer {
-  display: none;
   padding: 0 1.5rem 1.2rem;
+  display: none;
   color: #cfcfcf;
   font-size: 0.95rem;
   line-height: 1.5;
@@ -1088,6 +1105,7 @@ nav .mobile-menu .close-btn .icon {
   background: url("../assets/footer-img.png") center no-repeat;
   background-size: cover;
   min-height: 100vh;
+  overflow: hidden;
 }
 .sales-section .sales-content {
   width: 90%;
@@ -1193,10 +1211,8 @@ nav .mobile-menu .close-btn .icon {
   width: 90%;
 }
 .sales-section .footer-text .privacy {
-  bottom: 20px;
-  right: 40px;
   font-size: 0.9rem;
-  color: #888;
+  color: #d2d2d2;
 }
 
 /*# sourceMappingURL=style.css.map */

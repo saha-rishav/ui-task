@@ -451,8 +451,7 @@ nav .mobile-menu .close-btn .icon {
 }
 @media only screen and (max-width: 768px) {
   .tracking .tracking-content .lines {
-    border-left: 0px dashed rgba(0, 128, 0, 0.544);
-    border-right: 0px dashed rgba(0, 128, 0, 0.544);
+    border: none;
   }
 }
 

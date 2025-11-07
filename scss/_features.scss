@@ -44,7 +44,6 @@
                         font-size: 12px;
                     }
                 }
-
             }
 
             button {
@@ -94,7 +93,6 @@
                 padding: 0 20px;
             }
 
-
             h3 {
                 font-size: 22px;
                 text-transform: capitalize;
@@ -104,7 +102,6 @@
             p {
                 font-size: 16px;
                 color: gray;
-
             }
         }
 
@@ -113,12 +110,10 @@
             border-right: 1px dashed rgba(0, 128, 0, 0.544);
 
             @include md {
-                border-left: 0px dashed rgba(0, 128, 0, 0.544);
-                border-right: 0px dashed rgba(0, 128, 0, 0.544);
+                border: none;
 
             }
         }
-
     }
 }
 
@@ -622,8 +617,6 @@
 
                 }
             }
-
-
         }
     }
 }
@@ -753,7 +746,6 @@
 }
 
 .faq-section {
-    // background: radial-gradient(circle at top right, #0a1f12, #000);
     padding: 5rem 2rem;
     text-align: center;
 

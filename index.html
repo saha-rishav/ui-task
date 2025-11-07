@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Task</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav>
+      <div class="nav-container">
+        <a href="#">
+          <img src="./assets/LOGO.png" alt="Logo" />
+        </a>
+
+        <div class="nav-links">
+          <a href="#">Features</a>
+          <a href="#">Resources</a>
+          <a href="#">Comparison</a>
+          <a href="#">Blogs</a>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <svg class="icon menu-icon" viewBox="0 0 24 24">
+            <path
+              d="M3 6h18M3 12h18M3 18h18"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="mobile-menu">
+        <!-- Close Icon inside the menu -->
+        <button class="close-btn" onclick="toggleMenu()">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path
+              d="M6 6l12 12M6 18L18 6"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </button>
+
+        <a href="#">Features</a>
+        <a href="#">Resources</a>
+        <a href="#">Comparison</a>
+        <a href="#">Blogs</a>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="funding-badge">
+          <button>
+            Raised $1.5 Million funding • <span>Read More</span> →
+          </button>
+        </div>
+        <div class="content_text">
+          <h1>Manage your sales and analytics at one place</h1>
+          <p>
+            The page you are looking for does not exist. <br />
+            Sign up for Framer to publish your own website.
+          </p>
+        </div>
+        <div class="hero-buttons">
+          <button class="btn primary">Buy Template</button>
+          <button class="btn secondary">Book Demo</button>
+        </div>
+        <div class="hero-image">
+          <img src="./assets/main-dashboard.png" alt="Dashboard Preview" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Trusted Brands -->
+    <section class="brands">
+      <div class="brand-logos">
+        <div>
+          <img src="./assets/Item-1.png" alt="Netflix" />
+        </div>
+        <div>
+          <img src="./assets/Item -2.png" alt="Disney" />
+        </div>
+        <div>
+          <img src="./assets/Item -3.png" alt="Microsoft" />
+        </div>
+        <div>
+          <img src="./assets/Item -4.png" alt="Duolingo" />
+        </div>
+        <div>
+          <img src="./assets/Item-5.png" alt="Duolingo" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="feature-grid">
+        <div class="left_side">
+          <h2>Keep track of all usage</h2>
+          <p>
+            Tracking all usages for efficent management and comprehensive
+            oversight
+          </p>
+          <ul>
+            <li>comprehensive usage monitoring</li>
+            <li>efficent management</li>
+            <li>Enhanced oversight</li>
+          </ul>
+
+          <button>Go to Watchlist</button>
+        </div>
+        <div class="right_side">
+          <img src="./assets/manage-dashboard.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Tracking Section -->
+    <section class="tracking">
+      <div class="tracking-content">
+        <div class="card">
+          <img src="./assets/icons-1.png" alt="" />
+          <h3>Real-time tracking</h3>
+          <p>
+            Monitor usage as it happens to stay updated with the latest data
+          </p>
+        </div>
+        <div class="card lines">
+          <img src="./assets/icons-2.png" alt="" />
+          <h3>detailed reporting</h3>
+          <p>
+            Generate in-dept reports that provide insights into usage patterns
+            and trends
+          </p>
+        </div>
+        <div class="card">
+          <img src="./assets/icons-3.png" alt="" />
+          <h3>Customizable alerts</h3>
+          <p>
+            Set up notifications for specific usage threshold or unusal activity
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI suggestion -->
+    <section class="suggestion">
+      <div class="suggestion-content">
+        <div class="left">
+          <div class="top underline">
+            <h2>Timely alerts & sync ups</h2>
+            <p>
+              Pick winning stocks confidently with 130+ filters or create your
+              goal-based screens
+            </p>
+            <img src="./assets/bar-code-scan.png" alt="" />
+          </div>
+          <div class="top">
+            <h2>Encrypted integrations across</h2>
+            <p>
+              Pick winning stocks confidently with 130+ filters or create your
+              goal-based screens
+            </p>
+            <img src="./assets/bar-code-scan.png" alt="" />
+          </div>
+        </div>
+        <div class="right">
+          <h3>AI suggested optimisation</h3>
+          <p>
+            Pick winning stocks confidently with 130+ filters or create your
+            goal-based screens
+          </p>
+          <div class="img_div">
+            <img src="./assets/list-of-media.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What matters -->
+    <section class="transactions">
+      <div class="transactions-content">
+        <div class="heading">
+          <h2>Track what matters to you</h2>
+        </div>
+        <div class="cards">
+          <div class="card card-1">
+            <div class="card-content">
+              <h3>Transactions</h3>
+              <p>
+                Pick winnig stocks confidently with 130+ filters or create your
+              </p>
+            </div>
+            <div class="img_div">
+              <img src="./assets/history-card.png" alt="" />
+            </div>
+          </div>
+          <div class="card card-2">
+            <div class="card-content">
+              <h3>Friends and family</h3>
+              <p>
+                Pick winnig stocks confidently with 130+ filters or create your
+              </p>
+            </div>
+            <div class="img_div">
+              <img src="./assets/combine-card.png" alt="" />
+            </div>
+          </div>
+          <div class="card card-3">
+            <div class="card-content">
+              <h3>Timely reminders</h3>
+              <p>
+                Pick winnig stocks confidently with 130+ filters or create your
+              </p>
+            </div>
+            <div class="img_div">
+              <img src="./assets/date-card.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Focus -->
+    <section class="focus">
+      <div class="focus-content">
+        <h2>Focus on what matters</h2>
+        <p>Checkout how both end of forms look like for our users</p>
+        <div class="toggle-container">
+          <button class="toggle-btn active">
+            <span class="icon creator-icon">📈</span>
+            <span>Creator View</span>
+          </button>
+          <button class="toggle-btn">
+            <span class="icon enduser-icon">🔮</span>
+            <span>End User View</span>
+          </button>
+        </div>
+        <div class="img_div">
+          <img src="./assets/lapbanner.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial">
+      <div class="testimony">
+        <div class="card">
+          <p>
+            "We were one of the early adopters of Metaforms. More than the lead
+            quality, the quality of conversations with our prospects improved.
+            Metaforms pays for itself in the first few day I don;t see us not
+            using Metaform in near future."
+          </p>
+          <div class="user_name">
+            <p>Rohin Singh</p>
+            <p>Chief Integrating Officer</p>
+          </div>
+        </div>
+        <div class="card">
+          <p>
+            "We were one of the early adopters of Metaforms. More than the lead
+            quality, the quality of conversations with our prospects improved.
+            Metaforms pays for itself in the first few day I don;t see us not
+            using Metaform in near future."
+          </p>
+          <div class="user_name">
+            <p>Rohin Singh</p>
+            <p>Chief Integrating Officer</p>
+          </div>
+        </div>
+        <div class="card">
+          <p>
+            "We were one of the early adopters of Metaforms. More than the lead
+            quality, the quality of conversations with our prospects improved.
+            Metaforms pays for itself in the first few day I don;t see us not
+            using Metaform in near future."
+          </p>
+          <div class="user_name">
+            <p>Rohin Singh</p>
+            <p>Chief Integrating Officer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="table">
+      <div class="table-content">
+        <h2>Focus on what matters</h2>
+
+        <div class="comparison-container">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>
+                  <div>
+                    <span></span>
+                    Metaforms
+                  </div>
+                </th>
+                <th>Typeform</th>
+                <th>Typeform</th>
+                <th>Typeform</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dynamic copies for questions</td>
+                <td class="check">✔</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+              </tr>
+              <tr>
+                <td>Auto-sequence of questions</td>
+                <td class="check">✔</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+              </tr>
+              <tr>
+                <td>Followup questions on the basis</td>
+                <td class="check">✔</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+              </tr>
+              <tr>
+                <td>AI thank you and start screen</td>
+                <td class="check">✔</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+              </tr>
+              <tr>
+                <td>AI report generation with all important</td>
+                <td class="check">✔</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+                <td class="cross">✕</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="product">
+      <div class="prodcut-content">
+        <div class="left">
+          <div class="img_div">
+            <img src="./assets/Ranking position.png" alt="" />
+          </div>
+          <div class="img_div">
+            <img src="./assets/pro-certificate.png" alt="" />
+          </div>
+        </div>
+        <div class="right">
+          <div class="top">
+            <h3>40,00,000+</h3>
+            <p>Users Love Tickertape</p>
+          </div>
+          <div class="bottom">
+            <div class="left_side">
+              <h3>4.6</h3>
+              <p>Google Play rating</p>
+            </div>
+            <div class="right_side">
+              <h3>100cr+</h3>
+              <p>Transaction volume</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLogs -->
+    <section class="blogs">
+      <div class="blog_content">
+        <h2>Blogs and newsroom updates</h2>
+        <p class="content">
+          A community for India's investors hang out and talk about investments,
+          personal finance
+        </p>
+
+        <div class="card-container">
+          <div
+            class="card"
+            style="
+              background: url('./assets/image-section-one.png') center center
+                no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="overlay">
+              <h3>Timely alerts & sync ups</h3>
+              <p>
+                Pick winning stocks confidently with 130+ filters or create your
+                own goal-based screens. Pick winning stocks confidently with
+                130+ filters or create your own goal-based screens.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="card"
+            style="background: url('./assets/image-section-two.png')"
+          >
+            <div class="overlay">
+              <h3>Timely alerts</h3>
+              <p>
+                Pick winning stocks confidently with 130+ filters or create your
+                own goal-based screens.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="third_card">
+          <div
+            class="card"
+            style="
+              background: url('./assets/image-section-three.png') center center
+                no-repeat;
+              background-size: cover;
+            "
+          >
+            <div class="overlay">
+              <h3>Timely alerts</h3>
+              <p>
+                Pick winning stocks confidently with 130+ filters or create your
+                own goal-based screens.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="faq-header">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            A community for India’s investors hang out and talk about
+            investments, personal finance
+          </p>
+        </div>
+
+        <div class="faq-items">
+          <div class="faq-item active">
+            <button class="faq-question">
+              What is the conversion % of MetaForm?
+            </button>
+            <div class="faq-answer">
+              <p>
+                At the moment, I'm pretty happy where I am. Currently I am not
+                looking for any full-time opportunities. But that being said, I
+                am always open to discuss interesting opportunities,
+                collaborations and other fun stuff. If you're interested in
+                discussing a project, making something great together, please
+                fill the form above.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              How do your quote pricing works and when can we get on call?
+            </button>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Can you facelift my design?</button>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">Can you facelift my design?</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sales-section">
+      <div class="sales-content">
+        <h2>Manage your sales and analytics at one place</h2>
+        <div class="sales-text">
+          <div class="left_side">
+            <img src="./assets/arrow.png" alt="" />
+            <p>
+              Empowering Your Projects, Enhancing Your Success, Every Step of
+              the Way.
+            </p>
+            <div class="socials">
+              <button>
+                <img src="./assets/LIND-MEDIA.png" alt="" />
+              </button>
+              <button>
+                <img src="./assets/X-MEDIA.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <div class="app-buttons">
+            <h5>Download our App</h5>
+            <button class="google-play">
+              <img src="./assets/play-store.png" alt="Google Play" />
+            </button>
+            <button class="app-store">
+              <img src="./assets/app-store.png" alt="App Store" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer-text">
+        <p class="privacy">© ropflow.in</p>
+        <p class="privacy">Privacy Policy</p>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
